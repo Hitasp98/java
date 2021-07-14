@@ -1,5 +1,20 @@
 package First;
 
+import First.cret.Beverage;
+
+class testproteact extends Beverage {
+    @Override
+    public void hello() {
+        super.hello();
+    }
+
+    public static void main(String[] args) {
+        Beverage beverage = new Beverage();
+//        beverage.hi();//error because default methode
+        beverage.hello();
+    }
+}
+
 class ClassB {
     public int A;
 
@@ -18,9 +33,10 @@ public class ClassA extends ClassB {
         ClassA.test();
         classA.hiA("a");
     }
-//look here
-  /*  public int hiA(int x) {
-        *//*A = 1;
+
+    //look here
+    /*  public int hiA(int x) {
+     *//*A = 1;
         System.out.println("Inside hiA : "+A);*//*
         return  0;
     }
@@ -29,8 +45,8 @@ public class ClassA extends ClassB {
         return 0;
     }
 
-    private String hiA(String  a) {
-        return  "0";
+    private String hiA(String a) {
+        return "0";
     }
 
     public static void test() {

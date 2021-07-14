@@ -1,9 +1,11 @@
 package AbstractSuperclass;
-abstract class Fruit{
+
+abstract class Fruit {
     public abstract void jo();
 
 }
-public class Food extends Fruit{
+
+public class Food extends Fruit {
     @Override
     public void jo() {
 
